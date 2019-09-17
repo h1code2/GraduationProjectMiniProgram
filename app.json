@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/lock/lock",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/lock/remark/remark",
+    "pages/more/more",
+    "pages/control/control",
+    "pages/modifypwd/modifypwd"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智能门锁",
+    "navigationBarTextStyle": "black"
+  }
+}

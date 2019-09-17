@@ -1,0 +1,44 @@
+/* pages/lock/reamrk/remark.wxss */
+
+.msg-inner {
+  padding: 25rpx;
+}
+
+.qr-info {
+  text-align: center;
+}
+
+.qr-info text.qr-info-code {
+  color: #25aae3;
+  font-size: 100rpx;
+  text-shadow: 0 0 20rpx #617891;
+}
+
+.qr-info text.qr-info-remark {
+  font-size: 48rpx;
+  text-shadow: 0 0 8rpx gray;
+}
+
+.open-lock-reason-title {
+  font-size: 36rpx;
+}
+
+.otherInput {
+  margin: 30rpx 25rpx 0 25rpx;
+  z-index: 1;
+}
+
+.open-lock-btn-view {
+  margin: 50rpx auto;
+}
+
+.open-lock-btn {
+  background: #25aae3;
+  color: white;
+}
+
+.other-content{
+  padding: 12rpx 20rpx;
+  border: 2rpx solid #617891;
+  border-radius: 10rpx;
+}

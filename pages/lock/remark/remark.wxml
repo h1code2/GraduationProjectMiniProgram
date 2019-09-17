@@ -1,0 +1,29 @@
+<!--pages/lock/reamrk/remark.wxml-->
+<view class='msg-inner'>
+  <view class='qr-info'>
+    <text class='qr-info-code'>{{lockCode}}</text>
+    <text class='qr-info-remark'>
+    {{lockRemark}}
+    </text>
+  </view>
+  <view class='open-lock-reason'>
+    <view class="weui-cells__title open-lock-reason-title">开门缘由-备注：</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label" wx:for="{{reasonItems}}" wx:key="value">
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+          <view class="weui-cell__bd">{{item.msg}}</view>
+          <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+            <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+          </view>
+        </label>
+      </radio-group>
+    </view>
+    <view wx:if="{{otherReason}}" class="otherInput">
+      <input cursor-spacing='30' class='other-content' bindinput='otherRemark' placeholder="其他内容备注填写" />
+    </view>
+    <view class="open-lock-btn-view">
+      <button bindtap='openLockFunc' class="weui-btn open-lock-btn" type="">提交开锁</button>
+    </view>
+  </view>
+</view>
